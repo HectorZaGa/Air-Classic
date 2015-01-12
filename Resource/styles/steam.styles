@@ -977,6 +977,24 @@ steam.styles
 			}
 		}
 
+		"COverlayBroadcastChatDialog FrameCloseButton" {
+			render_bg {
+				0="image( x0 + 4, y0 + 9, x1, y1, graphics/win32_win_close )"
+			}
+		}
+
+		"COverlayBroadcastChatDialog FrameCloseButton:hover" {
+			render_bg {
+				1="image( x0 + 4, y0 + 9, x1, y1, graphics/win32_win_close_hover )"
+			}
+		}
+
+		"COverlayBroadcastChatDialog FrameCloseButton:active" {
+			render_bg {
+				1="image( x0 + 4, y0 + 9, x1, y1, graphics/win32_win_close_hover )"
+			}
+		}
+
 		"CFriendsDialog FrameMinimizeButton" {
 			render_bg {
 				1="image( x0 + 4, y0 + 9, x1, y1, graphics/win32_win_min )"
