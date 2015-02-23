@@ -65,7 +65,7 @@
 
 		place
 		{
-			control=welcomedetails,nonsteamdetails,achievementsdetails,friendsdetails,newsdetails,screenshotsdetails,clouddetails
+			control=welcomedetails,nonsteamdetails,achievementsdetails,friendsdetails,dlcdetails,clouddetails,newsdetails,screenshotsdetails
 			region=detailsbody
 			dir=down
 			width=max
