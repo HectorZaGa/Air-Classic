@@ -121,6 +121,10 @@
 				0="image( x0, y0 + 12, x1, y1, graphics/caret_down )"
 			}
 		}
+
+		BroadcastPanelMinimized {
+			inset="0 0 0 0"
+		}
 	}
 
 	colors
@@ -141,7 +145,11 @@
 		place { control=emailreminderbar margin-top=36 width=max height=55 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=WebPanel 				region=body width=max height=max start=emailreminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
+		place { control=WebPanel 							region=body width=max height=max start=emailreminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
+		place { control=BroadcastPage					region=body width=max height=max start=emailreminderbar dir=down }
+		place { control=BroadcastPageMin			region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
+
 		place { control=GamesPage_Details 		region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=GamesPage_List 			region=body width=max height=max start=emailreminderbar dir=down }
 		place { control=GamesPage_Grid 			region=body width=max height=max start=emailreminderbar dir=down margin-bottom=9 }
