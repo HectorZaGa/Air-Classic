@@ -20,8 +20,10 @@
 		place { controls=DWriteCheck					region=box dir=down start=UrlBarCheck margin-top=-2 }
 		place { controls=H264HWAccelCheck				region=box dir=down start=DWriteCheck margin-top=-2 }
 
-		place { control="Divider2"						region=box dir=down start=H264HWAccelCheck margin-top=13 }
+		place [$LINUX||$OSX] { control="Divider2"						region=box dir=down start=UrlBarCheck margin-top=13 }
+		place [$WINDOWS] { control="Divider2"						region=box dir=down start=H264HWAccelCheck margin-top=13 }
 
+		place { controls=NotifyAvailableGamesCheck		region=box dir=down width=max start=Divider2 margin-top=15 }
 		place { controls=NotifyAvailableGamesCheck		region=box dir=down width=max start=Divider2 margin-top=15 }
 		place { control="SetJumpListOptionsButton"		region=box dir=down width=280 height=24 start=NotifyAvailableGamesCheck margin-top=10 }
 
