@@ -10,7 +10,7 @@
 			}
 			render
 			{
-				0="fill( x0 + 16, y1 - 2, x1 - 16, y1 - 1, AirDivider )" 
+				0="fill( x0 + 16, y1 - 2, x1 - 16, y1 - 1, AirDivider )"
 			}
 		}
 
@@ -27,8 +27,8 @@
 		ModuleHeading
 		{
 			textcolor=Text
-		}	
-		
+		}
+
 		ModuleHeading2
 		{
 			textcolor=Text
@@ -40,7 +40,7 @@
 			{
 				0="fill( x0 + 1, y0, x1 - 1, y1, none )"
 			}
-			render { }    
+			render { }
 		}
 	}
 
@@ -61,12 +61,12 @@
 
 		// left-mid column
 		place { control="namelabel" region="column2" y=17 }
-		place { control="viewmodsbutton,pauseresumebutton" region=column2 y=50 height=24 spacing=8 }	
+		place { control="viewmodsbutton,pauseresumebutton" region=column2 y=50 height=24 spacing=8 }
 
 		// right-mid column
-		place { control="downloadtotallabel,starttimelabel,timeremaininglabel" region=column3 dir=down spacing=8 y=20 height=19 }
-		place { control="downloadtotalfield,starttimefield,timeremainingfield" region=column3 dir=down spacing=8 y=20 x=110 height=19 }
-		
+		place { control="downloadtotallabel,starttimelabel,timecompletedlabel,timeremaininglabel,pausereasonlabel" region=column3 dir=down spacing=8 y=20 height=19 }
+		place { control="downloadtotalfield,starttimefield,timecompletedfield,timeremainingfield,pausereasonfield" region=column3 dir=down spacing=8 y=20 x=110 height=19 }
+
 		// right column
 		//if Valve ever adds proper styles to the pauseresumebutton, this will position it in accordance with the normal download panel
 		//place { control="pauseresumebutton" region="column4" y=44 align=right height=24 width=24 margin-right=12 }

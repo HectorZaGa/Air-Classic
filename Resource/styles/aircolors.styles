@@ -163,13 +163,13 @@
 		blue="0 133 199 255"
 		darkred="128 0 0 255"
 		darkpurple="64 0 64 255"
-		
+
 		// control colors
 		bordercolor="133 130 113 255"
 		darkcorner="77 73 71 255"
 		buttontext=Text
 		buttontextactive=Text
-		
+
 		// new control colors
 		ButtonFace="105 102 99 200"
 		ButtonFace2="92 89 86 255" // for use in main client list panel column header, some button states
@@ -179,7 +179,7 @@
 		ButtonFaceActive="105 102 99  240"  // not sure what this state is...
 		ButtonFaceFocus="105 102 99  240"  //  keyboard focus
 		ButtonFaceActiveFocus="105 102 99  255"  // this is the default choice
-		
+
 		ButtonBorder="112 109 105 255"
 		ButtonBorderPage="128 124 120 255"
 		ButtonBorderDisabled="77 75 72 255"
@@ -193,7 +193,7 @@
 		TextSelected="AirText240"
 		TextentrySelected="AirText240" // color of any selected text
 		TextDisabled="AirText100"
-		TextSelectedBG="Focus2" // background color of any selected text 
+		TextSelectedBG="Focus2" // background color of any selected text
 
 		Label="AirText170"
 		Label2="AirText120"
@@ -210,32 +210,32 @@
 		ScrollGlyph="204 198 192 255"  // the color of the scroll bar arrows
 		ScrollGlyphDisabled="77 74 72 255"
 		ScrollGlyphFocus="242 242 242 255"
-		
+
 		ScrollBG="77 74 72 255" // the color of the scroll bar gutter
-		
+
 		HeaderClient="57 53 49 255" // the color of the List box header in the main client window
 		HeaderDialog="95 92 90 255" // the color of the list box header in other windows
-		
+
 		TitleBar="86 81 78 50"
 		TitleBarFocus="176 169 162 50"
-		
+
 		//Focus="see options.ini"  		// background color of any selected menu or list item
 		//Focus2="see options.ini"		// background color of view buttons and anything else in focus that needs more 'punch'
-		//Focus3="62 92 133 255"		// background color of highlighted friends 
+		//Focus3="62 92 133 255"		// background color of highlighted friends
 		FocusGrid="85 146 160 240"  	// background color of any grid item
 		Highlight="focus" 	// same as focus
 		Highlight1="focus2"    // installing hover color
-		Highlight2="focus" 	// installing color 
+		Highlight2="focus" 	// installing color
 		Highlight3="173 69 71 255"    	// red for errors, blocked, etc.
-		Highlight5="77 109 140 255" 	// blue 
+		Highlight5="77 109 140 255" 	// blue
 		Highlight5a="83 124 166 255" 	// lighter version of highlight5
 		Highlight5b="59 85 98 255" 	// as highlight5 but darker, for non-focused window borders
 
-		BackgroundStartSubtle="20 20 20 155" 
+		BackgroundStartSubtle="20 20 20 155"
 		BackgroundStartSubtle="31 31 31 45" [$OSX]
 		BackgroundStart="none"
 		BackgroundStartOpaque="36 35 34 255"
-		
+
 		ClientBG="0 0 0 255"
 		DialogBG="56 54 53 255"
 
@@ -254,22 +254,22 @@
 
 		PropertySheetBG="74 72 70 255"
 		InteriorColor="64 62 60 255"
-		
+
 		DialogBorder="119 117 115 255" // border color around any dialog
-		
+
 		FillBG1="64 62 60 255" //gradient colors
 		FillBG2="71 69 67 255"
-		
+
 		MenuBG1="92 89 86 255" //gradient colors
 		MenuBG2="61 59 58 255"
-		
+
 		Divider="107 104 101 255"
 		DarkImageBorder="47 48 43 255"
 		DarkImageOverlay="0 0 0 80"
 
 		// colors pulled from steamscheme.res
 		"ClayBG"      "70 70 70 255"
-		"ClayButtonBG"      "87 88 88 255"        
+		"ClayButtonBG"      "87 88 88 255"
 		"ClayEnabled"     "85 88 82 255"
 		"ClayKeyFocus"      "89 92 77 255"
 		"ClayMouseDown"     "85 85 85 255"
@@ -289,13 +289,13 @@
 		"GrayBG"      "77 73 71 255"
 		"GrayBG2"     "39 37 35 255"
 		"TempGradientTop" "53 52 51 255"
-		
+
 		html.secureurl "126 166 75 255"
 		html.insecureurl "173 69 72 255"
-		
+
 		TextEntry.IMEBGColor        "225 225 225 255"
 		TextEntry.IMEFGColor        "black"
-		
+
 		// Friends List colors
 		Friends.InGameColor       "164 210 63 255"
 		Friends.OnlineColor       "76 193 255 255"
@@ -306,16 +306,16 @@
 		Friends.SectionHeader     "Label"
 		Friends.NoAvatarOver      "Text"
 		Friends.IgnoredColor      "Highlight3"
-  
+
 		ChatDialog.URLColor       "text"
 		ChatOwnTextColor        "Label"
 		ChatDialog.HistoryColor	"AirText140"
 		ChatGradientTop         "39 39 39 255"
 		ChatGradientBottom        "102 104 99 255"
-    
+
 		AchievementPopup.TitleColor   "Text"
 		AchievementPopup.DescriptionColor "180 180 180 255"
-    
-		GiftOnlyInfo.ImagePanelColor  "GrayBG"    
+
+		GiftOnlyInfo.ImagePanelColor  "GrayBG"
 	}
 }
