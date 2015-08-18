@@ -27,10 +27,6 @@ ___
 
 Main - Show Wallet
 Displays your Steam Wallet amount on the bottom of the main client.
-___
-
-Menu - Other Languages
-Menu items will utilize Steam's localization files and should work properly in other languages. Only necessary with languages other than English.
 
 
 Extras
