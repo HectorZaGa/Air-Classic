@@ -31,6 +31,12 @@
 
 		CurrentAlbumImageStyle	{	}
 
+		SeekBarStyle {
+			minimum-height=30
+			inset-top=5
+			render_bg { }
+		}
+
 		RepeatButtonStyle										{	render_bg { 0="image( x0, y0, x1, y1, graphics/icons/music/repeat )" } }
 		RepeatButtonStyle:hover							{	render_bg { 0="image( x0, y0, x1, y1, graphics/icons/music/repeat_hover )" } }
 		RepeatButtonStyle:selected					{	render_bg { 0="image( x0, y0, x1, y1, graphics/icons/music/repeat_enabled )" } }
@@ -92,7 +98,8 @@
 
 		place { control="RepeatButton,ShuffleButton,VolumeButton" align=right y=67 spacing=10 height=18 width=18 margin-right=26 }
 
-		place { control="TrackList" y=116 width=max height=max }
+		place { control=SeekBar region=body y=82 height=18 width=max margin-right=10 margin-left=10 }
+		place { control=TrackList region=body y=112 width=max height=max }
 
 		place { control="NoTracksLabel,InfoLabel,CurrentStatusLabel,CurrentArtistLabel" height=0 width=0 }
 	}
