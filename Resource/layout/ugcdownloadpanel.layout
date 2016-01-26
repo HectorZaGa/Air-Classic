@@ -50,8 +50,8 @@
 		region { name="global" height=max width=max margin-left=16 margin-right=16 margin-top=2 }
 		region { name="column1" region=global x=0 width=200 }
 		region { name="column2" region=global x=216 width=284 }
-		region { name="column3" region=global x=516 width=max }
-		region { name="column4" region=global x=700 width=max overflow=allow-horizontal }
+		region { name="column3" region=global x=516 width=284 }
+		region { name="column4" region=global x=800 width=max }
 
 		place { control="downloadprogressbar" region=global align=bottom height=3 width=max margin-bottom=2 }
 
@@ -64,8 +64,9 @@
 		place { control="viewmodsbutton,pauseresumebutton" region=column2 y=50 height=24 spacing=8 }
 
 		// right-mid column
-		place { control="downloadtotallabel,starttimelabel,timecompletedlabel,timeremaininglabel,pausereasonlabel" region=column3 dir=down spacing=8 y=20 height=19 }
-		place { control="downloadtotalfield,starttimefield,timecompletedfield,timeremainingfield,pausereasonfield" region=column3 dir=down spacing=8 y=20 x=110 height=19 }
+		place { control=downloadtotallabel,downloadtotalfield region=column2 spacing=10 y=20 height=19 }
+		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column2 spacing=10 y=46 height=19 }
+		place { control=timeremaininglabel,timeremainingfield region=column2 spacing=10 y=72 height=19 }
 
 		// right column
 		//if Valve ever adds proper styles to the pauseresumebutton, this will position it in accordance with the normal download panel
