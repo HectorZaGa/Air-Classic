@@ -142,7 +142,7 @@
 
 		//Body
 		region { name="body" y=36 height=max width=max margin-bottom=30 }
-		place { control=emailreminderbar,phonereminderbar margin-top=36 width=max height=55 }
+		place { control=emailreminderbar,phonereminderbar margin-top=36 width=max height=55 dir=down }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
 		place { control=WebPanel 							region=body width=max height=max start=phonereminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
