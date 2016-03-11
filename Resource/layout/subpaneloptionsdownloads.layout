@@ -21,7 +21,8 @@
 
 		place { controls="AllowDownloadsDuringGameplayCheckbox"		region=box dir=down start=ThrottleRates margin-top=20 }
 		place { controls="ThrottleDownloadsWhileStreamingCheckbox"			region=box dir=down start=AllowDownloadsDuringGameplayCheckbox margin-top=-2 }
-		place { controls="AutoUpdateTimeRestrictCheckbox"			region=box dir=down start=ThrottleDownloadsWhileStreamingCheckbox margin-top=-2 }
+		place { controls="DownloadRatesInBitsCheckbox"			region=box dir=down start=ThrottleDownloadsWhileStreamingCheckbox margin-top=-2 }
+		place { controls="AutoUpdateTimeRestrictCheckbox"			region=box dir=down start=DownloadRatesInBitsCheckbox margin-top=-2 }
 
 		place { controls="AutoUpdateTimeRestrictStartLabel"			region=box dir=down start=AutoUpdateTimeRestrictCheckbox margin-top=10 }
 		place { controls="AutoUpdateTimeRestrictStart"				region=box dir=down width=135 height=24 start=AutoUpdateTimeRestrictStartLabel margin-top=5 }
