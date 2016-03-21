@@ -222,6 +222,9 @@
 		bigtextlabel
 		{ font-family=light font-size=18 }
 
+		bigtextNonUpper
+		{ font-family=light font-size=18 }
+
 		bigtextHeader
 		{ font-family=light font-size=18 }
 
