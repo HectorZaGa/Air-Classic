@@ -5,12 +5,12 @@
 		region { name="box" width=440 height=max y=0 x=0 }
 
 		place { controls=DescriptionLabel					region=box width=max }
-		place { controls=EnableOverlayCheck,EnableSCTenFootOverlayCheck					region=box dir=down width=max start=DescriptionLabel margin-top=10 }
+		place { controls=EnableOverlayCheck,EnableSCTenFootOverlayCheck,EnableVRDesktopGameTheaterCheck					region=box dir=down width=max start=DescriptionLabel margin-top=10 }
 
-		place { controls=HotKeySelectorLabel				region=box dir=down start=EnableSCTenFootOverlayCheck margin-top=10 }
+		place { controls=HotKeySelectorLabel				region=box dir=down start=EnableVRDesktopGameTheaterCheck margin-top=10 }
 		place { controls=HotKeySelector						region=box dir=down width=200 height=24 start=HotKeySelectorLabel margin-top=10 }
 
-		place { control=ShowIngameFPSLabel									dir=down x=220 start=EnableSCTenFootOverlayCheck y=10 }
+		place { control=ShowIngameFPSLabel									dir=down x=220 start=EnableVRDesktopGameTheaterCheck y=10 }
 		place { control=ShowIngameFPSCombo									dir=down width=200 start=ShowIngameFPSLabel y=10 }
 
 		place { control=ShowIngameFPSContrastCheck					dir=down start=ShowIngameFPSCombo y=20 }
