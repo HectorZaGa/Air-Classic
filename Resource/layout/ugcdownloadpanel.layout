@@ -44,7 +44,6 @@
 		}
 	}
 
-
 	layout
 	{
 		region { name="global" height=max width=max margin-left=16 margin-right=16 margin-top=2 }
@@ -53,24 +52,24 @@
 		region { name="column3" region=global x=516 width=284 }
 		region { name="column4" region=global x=800 width=max }
 
-		place { control="downloadprogressbar" region=global align=bottom height=3 width=max margin-bottom=2 }
+		place { control="downloadprogressbar" align=bottom height=3 width=max margin-bottom=2 }
 
 		// left column
 		place { control="gameimage" region="column1" width=184 height=69 align=top-center margin-top=25 margin-left=16 }
-		place { control="workshopminibanner" region="column1" width=184 height=26 margin-top=68 margin-left=16  }
+		place { control="workshopminibanner" region="column1" width=184 height=26 margin-top=68 margin-left=16 }
 
 		// left-mid column
 		place { control="namelabel" region="column2" y=17 }
-		place { control="viewmodsbutton,pauseresumebutton" region=column2 y=50 height=24 spacing=8 }
+		place { control="viewmodsbutton" region=column2 y=50 height=24 }
 
 		// right-mid column
-		place { control=downloadtotallabel,downloadtotalfield region=column2 spacing=10 y=20 height=19 }
-		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column2 spacing=10 y=46 height=19 }
-		place { control=timeremaininglabel,timeremainingfield region=column2 spacing=10 y=72 height=19 }
+		place { control=downloadtotallabel,downloadtotalfield region=column3 spacing=10 y=20 height=19 }
+		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column3 spacing=10 y=46 height=19 }
+		place { control=timeremaininglabel,timeremainingfield region=column3 spacing=10 y=72 height=19 }
 
 		// right column
 		//if Valve ever adds proper styles to the pauseresumebutton, this will position it in accordance with the normal download panel
-		//place { control="pauseresumebutton" region="column4" y=44 align=right height=24 width=24 margin-right=12 }
+		place { control="pauseresumebutton" region="column4" y=44 align=right height=24 width=24 margin-right=12 }
 		place { control="updatetypelabel" region="column4" y=40 align=right margin-right=43 }
 		place { control="graphdownloadrate" region=column4 align=right y=74 margin-right=43 }
 
