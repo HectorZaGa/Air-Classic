@@ -84,7 +84,6 @@
 		place { control="namelabel" region="column2" y=17 }
 		place { control="launchbutton" region=column2 y=50 height=24 }
 
-
 		// right-mid column
 		place { control=downloadtotallabel,downloadtotalfield region=column3 spacing=10 y=20 height=19 }
 		place { control=timecompletedlabel,timecompletedfield,starttimelabel,starttimefield,pausereasonlabel,pausereasonfield region=column3 spacing=10 y=46 height=19 }
