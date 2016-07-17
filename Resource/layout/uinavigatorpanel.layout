@@ -122,13 +122,13 @@
 			}
 		}
 
+		WebPanelStyle {
+			inset="0 0 0 0"
+		}
+
 		BroadcastPanelMinimized {
 			inset="0 0 0 0"
 		}
-	}
-
-	colors
-	{
 	}
 
 	layout
@@ -145,20 +145,20 @@
 		place { control=emailreminderbar,phonereminderbar margin-top=36 width=max height=55 dir=down }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=WebPanel 							region=body width=max height=max start=phonereminderbar dir=down margin-top=-2 margin-bottom=-2 margin-right=-2 margin-left=-2 }
-		place { control=BroadcastPage					region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=BroadcastPageMin			region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
-		place { control=BroadcastPageMinHoriz	region=body width=300 height=168 margin-right=26 margin-bottom=26 dir=down align=bottom-right }
+		place { control=WebPanel 							width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=BroadcastPage					width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
 
-		place { control=GamesPage_Details 		region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=GamesPage_List 			region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=GamesPage_Grid 			region=body width=max height=max start=phonereminderbar dir=down margin-bottom=9 }
-		place { control=ScreenshotsPage 			region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=DownloadsPage 				region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=MediaPage 						region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=MusicPage_Details 		region=body width=max height=max start=phonereminderbar dir=down margin-top=-1 }
-		place { control=ToolsPage 						region=body width=max height=max start=phonereminderbar dir=down }
-		place { control=ConsolePage 			region=body width=max height=max start=phonereminderbar dir=down margin-bottom=3 }
+		place { control=GamesPage_Details 		width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=GamesPage_List 				width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=GamesPage_Grid 				width=max height=max start=phonereminderbar dir=down margin-bottom=39 }
+		place { control=ScreenshotsPage 			width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=DownloadsPage 				width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=MediaPage 						width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=MusicPage_Details 		width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=ToolsPage 						width=max height=max start=phonereminderbar dir=down margin-bottom=30 }
+		place { control=ConsolePage 					width=max height=max start=phonereminderbar dir=down margin-bottom=33 }
+		place { control=BroadcastPageMin			width=300 height=168 margin-right=26 margin-bottom=56 dir=down align=bottom-right }
+		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-right=26 margin-bottom=56 dir=down align=bottom-right }
 
 		//Bottom
 		region { name="bottom" align=bottom width=max height=26 }
