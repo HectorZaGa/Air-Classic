@@ -4,19 +4,19 @@
 	{
 		region { name="box" width=440 height=max y=0 x=0 }
 
-		place { control="AccountInfo"					region=box dir=down }
-		place { control="EmailInfo"						region=box dir=down start=AccountInfo margin-top=10 } //disappears in offline mode
-		place { control="VACStatusLabel"				region=box dir=down start=EmailInfo margin-top=10 }
-		place { control="SecurityStatusState"			region=box dir=down start=VACStatusLabel margin-top=10 }
-		place { control="AccountLink"					region=box dir=down start=SecurityStatusState margin-top=10 }
+		place { control=AccountInfo region=box dir=down }
+		place { control=EmailInfo region=box dir=down start=AccountInfo y=10 } //disappears in offline mode
+		place { control=SecurityStatusState region=box dir=down start=EmailInfo y=10 }
+		place { control=VACInfoLink region=box dir=down start=SecurityStatusState y=10 }
+		place { control=AccountLink region=box dir=down start=VACInfoLink y=10 }
 
 		place { control="Divider1"						region=box dir=down start=AccountLink margin-top=18 }
-		
+
 		place { control="ManageSecurityButton"			region=box dir=down width=280 height=24 start=Divider1 margin-top=19 }
 		place { control="ChangePasswordButton"			region=box dir=down width=280 height=24 start=ManageSecurityButton margin-top=5 }
 		place { control="ChangeContactEmailButton"		region=box dir=down width=280 height=24 start=ChangePasswordButton margin-top=5 }
 		place { control="ValidateContactEmailButton"	region=box dir=down width=280 height=24 start=ChangeContactEmailButton margin-top=5 } //only in offline mode
-		
+
 		place { control="NoPersonalInfoCheck"			region=box dir=down y=242 margin-top=10 }
 		place { control="Label1"						region=box dir=down start=NoPersonalInfoCheck margin-top=10 }
 
