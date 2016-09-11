@@ -1,23 +1,21 @@
-"resource/layout/subpaneloptionscloud.layout"
-{
-	layout
-	{
-		region { name="box" width=440 height=max y=0 x=0 }
-		
-		place { controls="FamilySharingTextState"		region=box dir=down width=max margin-top=-64 }
-		place { controls="AuthorizeDeviceButton"		region=box dir=down width=280 height=24 start=FamilySharingTextState margin-top=10 }
-		place { controls="DeauthorizeDeviceButton"		region=box dir=down width=280 height=24 start=FamilySharingTextState margin-top=10 }
-		place { controls="ManageSharingButton"			region=box dir=down width=280 height=24 start=FamilySharingTextState margin-top=41 }
+resource/layout/subpaneloptionsfamily.layout {
 
-		place { controls="BorrowersLabel"				region=box dir=down width=max start=ManageSharingButton margin-top=10 }
-		place { controls="BorrowersList"				region=box dir=down width=max height=140 start=BorrowersLabel margin-top=10 margin-left=-4 }
-		place { controls="ShowNotificationsCheck"		region=box dir=down start=BorrowersList margin-top=10 }
+	layout {
+		region { name=box width=440 height=max y=0 x=0 }
 
-		place { control="Divider1"						region=box dir=down width=max start=ShowNotificationsCheck margin-top=13 }
+		place { control=BorrowersLabel region=box width=max }
+		place { control=BorrowersList region=box dir=down width=max height=120 start=BorrowersLabel y=20 }
+		place {
+			control=AuthorizedDeviceCheck,ShowNotificationsCheck
+			region=box dir=down start=BorrowersList width=max y=10
+		}
+		place { control=ManageSharingLabel region=box dir=down start=ShowNotificationsCheck y=10 }
 
-		place { controls="FamilyOptionsText"			region=box dir=down width=max start=Divider1 margin-top=17 }
-		place { controls="ManageOptionsButton"			region=box dir=down width=280 height=24 start=FamilyOptionsText margin-top=10 }
+		place { control=Divider1 region=box region=box dir=down width=max start=ManageSharingLabel margin-top=23 }
 
-		place { control="FamilySharingTitle,FamilyOptionsTitle" height=0 width=0 }
+		place { control=FamilyOptionsText region=box dir=down width=max start=Divider1 y=20 }
+		place { control=ManageOptionsLabel region=box dir=down start=FamilyOptionsText y=10 }
+
+		place { control=FamilySharingInfoText,FamilySharingTitle,FamilyOptionsTitle height=0 width=0 }
 	}
 }
