@@ -216,7 +216,6 @@
 		place { control="account_balance,online_friends" region=bottom align=right y=4 height=26 margin-right=56 spacing=16 }
 
 		//Hidden Items
-		region { name=hidden height=0 width=0 }
-		place { control="startvr,exitvr,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance_seperator,account_URL,universe_label" region=hidden }
+		place { control=startvr,exitvr,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance_seperator,account_URL,universe_label height=0 width=0 }
 	}
 }
