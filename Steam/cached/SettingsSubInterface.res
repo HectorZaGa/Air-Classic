@@ -10,11 +10,15 @@
 
 		place { control="Divider1"						region=box dir=down start=TranslationLabel margin-top=18 }
 
-		place { control="Label2"						region=box dir=down start=Divider1 margin-top=15 }
-		place { control="FavoriteWindowCombo"			region=box dir=down width=280 height=24 start=Label2 margin-top=10 }
-		place { control="Label3"						region=box dir=down start=FavoriteWindowCombo dir=down margin-top=10 }
+		place { control="Label1"						region=box dir=down start=Divider1 margin-top=15 }
+		place { control="FavoriteWindowCombo"			region=box dir=down width=280 height=24 start=Label1 margin-top=10 }
+
+		place { control="Divider3"						region=box dir=down start=FavoriteWindowCombo margin-top=18 }
+
+		place { control="Label3"						region=box dir=down start=Divider3 dir=down margin-top=15 }
 		place { control="SkinCombo"						region=box dir=down width=280 height=24 start=Label3 margin-top=10 }
-		place { controls=AutoLaunchCheck				region=box dir=down start=SkinCombo margin-top=10 }
+		place { controls=DPIScalingCheck				region=box dir=down start=SkinCombo margin-top=10 }
+		place { controls=AutoLaunchCheck				region=box dir=down start=DPIScalingCheck margin-top=-2 }
 		place { controls=BigPictureModeCheck			region=box dir=down start=AutoLaunchCheck margin-top=-2 }
 		place { controls=UrlBarCheck					region=box dir=down start=BigPictureModeCheck margin-top=-2 }
 		place { controls=DWriteCheck					region=box dir=down start=UrlBarCheck margin-top=-2 }
@@ -26,7 +30,5 @@
 		place { controls=NotifyAvailableGamesCheck		region=box dir=down width=max start=Divider2 margin-top=15 }
 		place { controls=NotifyAvailableGamesCheck		region=box dir=down width=max start=Divider2 margin-top=15 }
 		place { control="SetJumpListOptionsButton"		region=box dir=down width=280 height=24 start=NotifyAvailableGamesCheck margin-top=10 }
-
-		place { control="Label1" height=0 width=0 }
 	}
 }
