@@ -212,10 +212,12 @@
 		place { control="ParentalLockButton" align=right end-right=frame_minimize margin-top=4 margin-right=21 height=26 width=18 }
 
 		place { control="InboxButton" region=bottom align=right y=4 height=26 width=26 margin-right=15 }
-		place { control="view_friends" region=bottom align=right y=4 height=26 width=52 margin-right=56 } //invisible
-		place { control="online_friends" region=bottom align=right y=4 height=26 margin-right=56 spacing=16 }
+		place { control="AccountButton" align=right y=6 height=24 margin-right=82 }
 
 		//Hidden Items
-		place { control="startvr,exitvr,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label" height=0 width=0 }
+		place { control="view_friends,online_friends,startvr,exitvr,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label" height=0 width=0 }
+
+		//needs the margin-left to actually remove the announcement web panel from sight
+    place { control=AnnouncementButton height=0 width=0 margin-left=-9999 }
 	}
 }
