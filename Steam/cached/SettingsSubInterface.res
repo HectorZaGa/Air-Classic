@@ -21,7 +21,8 @@
 		place { controls=AutoLaunchCheck				region=box dir=down start=DPIScalingCheck margin-top=-2 }
 		place { controls=BigPictureModeCheck			region=box dir=down start=AutoLaunchCheck margin-top=-2 }
 		place { controls=UrlBarCheck					region=box dir=down start=BigPictureModeCheck margin-top=-2 }
-		place { controls=DWriteCheck					region=box dir=down start=UrlBarCheck margin-top=-2 }
+		place { controls=GPUWebViewCheck					region=box dir=down start=UrlBarCheck margin-top=-2 }
+		place { controls=DWriteCheck					region=box dir=down start=GPUWebViewCheck margin-top=-2 }
 		place { controls=H264HWAccelCheck				region=box dir=down start=DWriteCheck margin-top=-2 }
 
 		place [$LINUX||$OSX] { control="Divider2"						region=box dir=down start=UrlBarCheck margin-top=13 }
