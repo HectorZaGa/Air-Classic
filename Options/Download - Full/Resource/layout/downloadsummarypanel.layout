@@ -1,0 +1,62 @@
+resource/layout/downloadsummarypanel.layout {
+
+	styles {
+		CDownloadSummaryPanel { 
+			render_bg { 
+				0="fill( x0, y0, x1, y1, AirBlock )"
+	 }
+ }
+
+		NetGraphPanel { textcolor=Focus3 bgcolor=none inset="0 0 0 0" }
+		NetLegendPanel { bgcolor=Focus3 }
+
+		DiscGraphPanel { textcolor=Focus2 bgcolor=none inset="0 0 0 0" }
+		DiskLegendPanel { bgcolor=Focus2 }
+
+		container {
+			bgcolor="none"
+		}
+
+		label {
+			textcolor=label2
+		}
+
+		bigtext {
+				textcolor=label
+		}
+
+		bigtextlabel {
+				textcolor=label2
+		}
+
+		bigtextHeader {
+				textcolor=label2
+		}
+
+		bigTextNumbers {
+				textcolor=Text
+		}
+	}
+
+	layout {
+		region { name=box height=max width=max margin-left=26 margin-right=26 y=16 }
+		region { name=graph y=50 height=80 width=max }
+
+		place { control=net_graphpanel region=graph width=max height=max }
+		place { control=disc_graphpanel region=graph width=max height=max }
+
+		place { control=pauseresumeallbutton region=box align=right }
+
+		place { region=box control=net_legend_panel height=13 width=5 x=4 y=10 }
+		place { region=box control=download_rate,download_rate_value x=15 y=7 spacing=8 }			place { region=box control=peak_download_rate,peak_download_rate_value x=195 y=7 spacing=8 }
+		place { region=box control=total_downloaded,total_downloaded_value x=385 y=7 spacing=8 }
+
+		place { region=box control=disk_legend_panel x=560 y=10 height=13 width=5 }
+		place { region=box control=disk_status_label,disk_status_value x=570 y=7 spacing=8 }
+
+		place { region=box control=blackout_label,blackout_value y=7 spacing=10 align=top-center }
+		place { region=box control=throttling_label,throttling_value y=26 spacing=10 align=top-center }
+
+		place { control=net_legend_label,disk_legend_label,header height=0 width=0 }
+	}
+}
